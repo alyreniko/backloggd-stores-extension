@@ -1,4 +1,4 @@
-# Stores Backloggd
+# Backloggd Stores
 
 Chrome extension that adds **store links** (Steam, Epic, GOG, Xbox, PlayStation, Nintendo, itch.io) to game pages on [Backloggd](https://backloggd.com), using the IGDB API.
 
