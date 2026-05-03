@@ -20,7 +20,7 @@ Chrome extension that adds **store links** (Steam, Epic, GOG, Xbox, PlayStation,
 
 ## Installation (Developer Mode)
 
-1. Clone this repository:
+1. Clone this repository or download the source code from the “[Releases](https://github.com/alyreniko/backloggd-stores-extension/releases)” page:
    ```bash
    git clone https://github.com/alyreniko/backloggd-stores-extension.git
    cd backloggd-stores-extension
