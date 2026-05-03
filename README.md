@@ -33,8 +33,9 @@ Chrome extension that adds **store links** (Steam, Epic, GOG, Xbox, PlayStation,
 ## Configuration
 
 This extension requires IGDB/Twitch API credentials.
-
-1. Create an app in Twitch Developer Console to get:
+1. Open the Twitch Developer Console: https://dev.twitch.tv/console
+2. Create an application (any name is fine).
+3. Copy:
    - **Client ID**
    - **Client Secret**
 2. Open extension **Options**
