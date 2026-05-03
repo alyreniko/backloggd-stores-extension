@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IGDB API Settings</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; max-width: 720px; }
+    label { display:block; margin-top:12px; font-weight:600; }
+    input { width:100%; padding:8px; margin-top:6px; }
+    button { margin-top:14px; padding:8px 14px; }
+    .ok { color: green; margin-top: 10px; }
+    .err { color: #b00020; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>IGDB / Twitch Credentials</h1>
+
+  <label for="cid">Client ID</label>
+  <input id="cid" type="text" placeholder="Twitch Client ID">
+
+  <label for="sec">Client Secret</label>
+  <input id="sec" type="password" placeholder="Twitch Client Secret">
+
+  <button id="save">Save</button>
+  <div id="status"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>

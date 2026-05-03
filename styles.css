@@ -1,0 +1,86 @@
+.blg-store-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.blg-store-icon-link {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(143, 156, 167);
+  text-decoration: none;
+  transition: transform .12s ease, border-color .12s ease, background .12s ease;
+}
+
+.blg-store-icon-link:hover {
+  border-color: rgba(252,99,153);
+}
+
+.blg-store-icon-img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.blg-store-muted {
+  color: rgba(220, 227, 241, .7);
+}
+
+.blg-store-settings-btn {
+  margin-left: 6px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #9ecbff;
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+}
+
+.blg-store-settings-btn:hover {
+  color: #c7e0ff;
+}
+
+.blg-console-snake {
+  --size: 5px;
+  --gap: 4px;
+  --dim: rgba(220, 227, 241, 0.22);
+  --mid: rgba(220, 227, 241, 0.55);
+  --hot: rgba(220, 227, 241, 1);
+
+  display: inline-grid;
+  grid-template-columns: repeat(2, var(--size));
+  grid-template-rows: repeat(3, var(--size));
+  gap: var(--gap);
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.blg-console-snake i {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: var(--dim);
+  display: block;
+  animation: blgSnake 900ms linear infinite;
+}
+
+.blg-console-snake i:nth-child(1) { animation-delay: 0ms; }    /* top-left */
+.blg-console-snake i:nth-child(2) { animation-delay: 150ms; }  /* top-right */
+.blg-console-snake i:nth-child(3) { animation-delay: 300ms; }  /* mid-right */
+.blg-console-snake i:nth-child(4) { animation-delay: 450ms; }  /* bottom-right */
+.blg-console-snake i:nth-child(5) { animation-delay: 600ms; }  /* bottom-left */
+.blg-console-snake i:nth-child(6) { animation-delay: 750ms; }  /* mid-left */
+
+@keyframes blgSnake {
+  0%, 100% { background: var(--dim); transform: scale(1); }
+  35%      { background: var(--mid); transform: scale(1.08); }
+  50%      { background: var(--hot); transform: scale(1.22); }
+  65%      { background: var(--mid); transform: scale(1.08); }
+}

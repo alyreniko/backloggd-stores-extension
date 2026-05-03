@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Backloggd Stores (IGDB API)",
+  "version": "2.0.0",
+  "description": "Shows game stores from IGDB API on Backloggd pages.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://backloggd.com/*",
+    "https://api.igdb.com/*",
+    "https://id.twitch.tv/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://backloggd.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*.svg"],
+      "matches": ["https://backloggd.com/*"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
