@@ -38,7 +38,7 @@ Chrome extension and Userscript that adds **store links** (Steam, Epic, GOG, Xbo
 
 If you prefer using a script manager
 1. Install Tampermonkey or Violentmonkey.
-2. Click here to install: Install from Greasy Fork (or use the backloggd-stores.user.js file from this repo).
+2. Click here to install: Install from [Greasy Fork](https://greasyfork.org/scripts/577398) (or use the backloggd-stores.user.js file from this repo).
 
 ## Configuration
 
@@ -48,7 +48,7 @@ This extension requires IGDB/Twitch API credentials.
 3. Copy:
    - **Client ID**
    - **Client Secret**
-2. Open the **Settings** tab or any page in the game, then click **Open settings**
+2. Open the **Settings** or the page for any game, then click **Open settings**
 3. Paste credentials and click **Save**
 
 ## How it works
