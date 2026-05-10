@@ -1,8 +1,11 @@
 // ==UserScript==
-// @name         Backloggd Stores (IGDB API) – Tampermonkey
+// @name         Backloggd Stores (IGDB API)
+// @name:ru      Backloggd магазины (IGDB API)
+// @author       alyreniko
 // @namespace    https://backloggd.com/
 // @version      2.0.0
 // @description  Shows game stores from IGDB API on Backloggd pages.
+// @description:ru Отображает магазины из API IGDB на страницах Backloggd.
 // @match        https://backloggd.com/games/*
 // @grant        GM_getValue
 // @grant        GM_setValue
